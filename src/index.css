@@ -11,3 +11,141 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+img {
+ width: auto;
+ height: auto;
+}
+
+.searchColumn {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.searchRow{
+  padding-left: 5%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+/* Clear floats after image containers */
+.searchRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.searchContainer{
+    position: relative;
+    background-color: #eee;
+    height: 40px;
+    border-radius: 24px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    display: flex;
+    transition: all .1s ease-in-out;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 2em;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  background-color: initial;
+  text-align: inherit;
+  margin-left: 96%;
+  margin-top: -4%;
+}
+.searchBox{
+box-shadow: none;
+padding-left: 10px;
+padding-bottom: 2px;
+box-sizing: border-box!important;
+flex-grow: 1;
+width: 100%;
+background: none;
+border: none;
+color: #111;
+height: 38px;
+font-size: large;
+text-align: center;
+}
+
+*:focus {
+  outline: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #111;
+}
+
+a { cursor: pointer }
+
+.btn-facebook {
+    background: #3B5998;
+    color: #fff;
+
+}
+
+.btn-facebook:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.btn-delete-account {
+    width: 40px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.searchBar{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+.covidImg{
+  width: 370px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 770px){
+  .container{
+    margin: 0 30px;
+  }
+  .covidImg{
+    width: 100%;
+  }
+}
