@@ -5,6 +5,7 @@ import Nav from '../../Nav';
 import About from '../../About';
 import Login from '../../Login';
 import CovidTracker from '../../Components/CovidTracker/CovidTracker';
+import Message from '../Common/Message';
 import { fetchSearchResult } from '../../Api';
 import {useAuth0} from '@auth0/auth0-react';
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
@@ -40,7 +41,7 @@ const Routers = () =>{
                     </Route>
                     <Route path="/about" exact component={About}/>
                     <Route path="/covid" exact component={CovidTracker}/></div>)
-                    :null}  {/* To do : Create a Message for signUp first */}
+                    :<Message/>}  {/* To do : Create a Message for signUp first */}
                     
                 </Switch>
            </div>
