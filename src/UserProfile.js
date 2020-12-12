@@ -1,15 +1,15 @@
-import React, { Profiler } from 'react';
+import React from 'react';
 import {useAuth0} from '@auth0/auth0-react';
+import {Avatar} from '@material-ui/core';
+import style from './UserProfile.module.css';
 
-function UserProfile(){
+const UserProfile = () =>{
     const {user} = useAuth0();
-    console.log(user);
-return(
-    <div>
-       {JSON.stringify(user)}
-    
-    </div>
-);
+    const {picture} = user;
+
+    return(
+        <Avatar className={style.ProfileImg} alt="profile img" src={picture}/>
+    );
 }
 
 export default UserProfile;
