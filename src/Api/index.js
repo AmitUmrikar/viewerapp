@@ -1,7 +1,9 @@
-import axios from 'axios'
+import axios from 'axios';
+require('dotenv').config();
 
 const url = 'https://covid19.mathdro.id/api';
 const unsplashApi = 'https://api.unsplash.com/search/photos?query=';
+
 
 export const fetchData = async (country) =>{   // api for multiple endpoint
     try {
@@ -43,7 +45,7 @@ export const fetchCountries = async() => {
 
 export const fetchSearchResult = async(searchText) => {
     try {
-        const {data: {results : results}} = await axios.get(`${unsplashApi}${searchText}`,{ headers: {'Authorization':''}});
+        const {data: {results : results}} = await axios.get(`${unsplashApi}${searchText}`,{ headers: {'Authorization':`Client-ID ${process.env.REACT_APP_API_CLIENTID}}`}});
         return (results);
     } catch (error) {
         console.log(error);
