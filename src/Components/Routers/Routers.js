@@ -9,6 +9,8 @@ import Message from '../Common/Message';
 import { fetchSearchResult } from '../../Api';
 import {useAuth0} from '@auth0/auth0-react';
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
+import UserProfile from '../../UserProfile';
+
 const Routers = () =>{
    
    // state react hook
@@ -33,6 +35,7 @@ const Routers = () =>{
                     <Route path="/login" exact component={Login}/>
                     {isAuthenticated ?  
                     (<div>
+                    <UserProfile/>
                     <Route path="/home" exact >
                         <SearchBar value={value} 
                                     handleChange={handleChange}
