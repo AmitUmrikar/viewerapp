@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Viewer from './Viewer';
 import Routers from './Components/Routers/Routers';
 import {Auth0Provider} from '@auth0/auth0-react';
 require('dotenv').config();
