@@ -4,8 +4,8 @@ import SearchImg from './SearchImg';
 import Nav from './Nav';
 import About from './About';
 import Login from './Login';
-import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
-import {useAuth0} from '@auth0/auth0-react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+//import {useAuth0} from '@auth0/auth0-react';
 import CovidTracker from './Components/CovidTracker/CovidTracker';
 
 export default class Viewer extends React.Component {
