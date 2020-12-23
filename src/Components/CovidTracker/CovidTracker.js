@@ -21,9 +21,6 @@ export default class CovidTracker extends React.Component {
     }
 
     render(){
-        const style = {
-            marginLeft: '38%'
-        };
         const {data,country} = this.state;
         return(
             <div className="container">
