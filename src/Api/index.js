@@ -45,7 +45,7 @@ export const fetchCountries = async() => {
 
 export const fetchSearchResult = async(searchText) => {
     try {
-        const {data: {results : results}} = await axios.get(`${unsplashApi}${searchText}`,{ headers: {'Authorization':`Client-ID ${process.env.REACT_APP_API_CLIENTID}}`}});
+        const {data: {results}} = await axios.get(`${unsplashApi}${searchText}`,{ headers: {'Authorization':`Client-ID ${process.env.REACT_APP_API_CLIENTID}}`}});
         return (results);
     } catch (error) {
         console.log(error);
