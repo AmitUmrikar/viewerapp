@@ -139,6 +139,9 @@ a { cursor: pointer }
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url('./Images/CovidVirus.jpg');
+  background-color: whitesmoke;
+  background-blend-mode: difference;
 }
 
 @media (max-width: 770px){
