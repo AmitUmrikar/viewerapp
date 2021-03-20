@@ -2,6 +2,7 @@ import React ,{ useState }from 'react';
 import SearchBar from '../../SearchBar';
 import SearchImg from '../../SearchImg';
 import Nav from '../../Nav';
+import Footer from '../Footer/Footer';
 import About from '../../About';
 import Login from '../../Login';
 import CovidTracker from '../../Components/CovidTracker/CovidTracker';
@@ -47,6 +48,7 @@ const Routers = () =>{
                     :<Message/>}  {/* To do : Create a Message for signUp first */}
                     
                 </Switch>
+                <Footer/>
            </div>
        </Router>
    );
