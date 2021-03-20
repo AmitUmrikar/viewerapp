@@ -144,6 +144,33 @@ a { cursor: pointer }
   background-blend-mode: difference;
 }
 
+.footer-container{
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.social-icons{
+  margin-right: 10px;
+  float: right;
+  margin-bottom:0;
+  list-style:none;
+  background-color: white !important;
+}
+
+.copyright-text{
+  margin-top: 15px;
+  display: inline-block;
+  margin-left: 18px;
+  font-family: math;
+  font-size: revert;
+  font-style: italic;
+}
+
+.social-icons li:hover{
+  background-color: azure;;
+  border-radius: 38%;
+}
+
 @media (max-width: 770px){
   .container{
     margin: 0 30px;
